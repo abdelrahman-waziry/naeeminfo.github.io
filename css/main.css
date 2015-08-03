@@ -597,9 +597,12 @@ hr {
   border: 2px solid #f1f1f1;
 }
 
+.normal-story img {
+  height: auto;
+}
+
 .story-content {
   float: left;
-  width: 85%;
   padding: 10px;
   margin: .5em auto 1em auto;
   text-align: left;
@@ -613,6 +616,10 @@ hr {
   margin: .9em;
   margin-left: 0;
   margin-bottom: .2em;
+}
+
+.story-title:hover {
+  color: #f49600;
 }
 
 .stats-wrap {
@@ -629,6 +636,20 @@ hr {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   color: #aaa;
+}
+
+.chart-card {
+  width: 37%;
+  margin: .5em;
+  margin-top: 4em;
+  float: right;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #d9e0e2;
+}
+
+.card-title {
+  margin-left: 2em;
 }
 
 /****************************
@@ -688,8 +709,36 @@ hr {
   padding: 10px;
 }
 
-#comment-section {
+.comments-section {
+  display: inline-block;
+  margin: 0 2em 3em 2em;
+  padding: 2em;
+  width: 50%;
   float: left;
+  border-radius: 3px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+}
+
+.comment-form {
+  width: 40%;
+}
+
+.comment-form input {
+  display: block;
+  margin: .8em auto;
+  padding: .6em 1.5em .6em 1em;
+  width: 250px;
+  border-radius: 3px;
+  border: 1px solid #f2f2f2;
+}
+
+.comment-form textarea {
+  display: block;
+  width: 550px;
+  height: 200px;
+  padding: 1em;
+  border: 1px solid #f2f2f2;
 }
 
 #trending-headline {
@@ -723,7 +772,6 @@ hr {
   margin-top: 0;
   margin-left: -3em;
   margin-right: 5.2em;
-  float: right;
   display: inline-block;
 }
 
