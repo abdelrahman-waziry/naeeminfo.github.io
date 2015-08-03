@@ -21,6 +21,7 @@
                <link href="css/normalize.css" rel="stylesheet" type="text/css">
                <link href="css/main.css" rel="stylesheet" type="text/css">
                <link href="css/responsive.css" rel="stylesheet" type="text/css">
+               <link href="css/jquery-ui.css" rel="stylesheet" type="text/css">
                <link href="css/rrssb.css" rel="stylesheet" type="text/css">
                <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
                <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -34,8 +35,12 @@
                <!--end web fonts-->
                <link href="img/favicon.png" rel="icon" type="image/x-icon"/>
                <script src="js/vendor/jquery-1.11.2.min.js"></script> <!-- Import Jquery -->
+               <script src="js/vendor/jquery-ui.min.js"></script>
+               <!-- Import Jquery UI-->
                <!-- Include js plugin -->
                <script src="owl-carousel/owl.carousel.js"></script>
+               <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+               <!--Import Google Charts-->
             </head>
             <body>
                <!--[if lt IE 8]>
@@ -77,75 +82,75 @@
                   <button id="search-trigger"><i class="fa fa-search"></i></button>
                   <button id="country-trigger"><i class="fa fa-globe"></i>Select Country</button>
                   <ul id="countries-list">
-                     <li id="egypt-tab">Egypt</li>
-                     <li id="dubai-tab" href="#">Dubai</li>
+                     <li><a id="egypt-tab" href="#"></a>Egypt</li>
+                     <li><a id="dubai-tab" href="#"></a>Dubai</li>
                   </ul>
                </header>
-               <div class="wide-stories">
+               <div id="page-top-anchor" class="wide-stories">
                   <figure class="wide-story">
                      <a href="browse/single-post.html"><img src="img/posts/post-2.jpg"></a>
                      <figcaption class="wide-story-content">
-                         <h4 class="story-title">Break news : this is text</h4>
-                           <p class="category-name">Reports</p>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p class="wide-storyParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        <h4 class="story-title">Break news : this is text</h4>
+                        <p class="category-name">Reports</p>
+                        <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                        <p class="wide-storyParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim .
-                            </p>
-                           <span class="stats-wrap">
-                              <span class="likes">
-                              <i class="fa fa-thumbs-up"></i> 221</span>
-                              <meta itemprop="interactionCount" content="UserLikes:221">
-                              <span class="views"><i class="fa fa-eye"></i> 4694</span>
-                              <meta itemprop="interactionCount" content="UserPageVisits:4694">
-                              <span class="comments">
-                                 <a href=""><i class="fa fa-comment"></i> 0</a>
-                                 <meta itemprop="interactionCount" content="UserComments:10">
-                              </span>
+                        </p>
+                        <span class="stats-wrap">
+                           <span class="likes">
+                           <i class="fa fa-thumbs-up"></i> 221</span>
+                           <meta itemprop="interactionCount" content="UserLikes:221">
+                           <span class="views"><i class="fa fa-eye"></i> 4694</span>
+                           <meta itemprop="interactionCount" content="UserPageVisits:4694">
+                           <span class="comments">
+                              <a href=""><i class="fa fa-comment"></i> 0</a>
+                              <meta itemprop="interactionCount" content="UserComments:10">
                            </span>
+                        </span>
                      </figcaption>
                   </figure>
                   <figure class="wide-story">
                      <a href="browse/single-post.html"><img src="img/posts/post-4.jpg"></a>
                      <figcaption class="wide-story-content">
-                         <h4 class="story-title">Break news : this is text</h4>
-                           <p class="category-name">Reports</p>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p class="wide-storyParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        <h4 class="story-title">Break news : this is text</h4>
+                        <p class="category-name">Reports</p>
+                        <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                        <p class="wide-storyParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim .
-                            </p>
-                           <span class="stats-wrap">
-                              <span class="likes">
-                              <i class="fa fa-thumbs-up"></i> 221</span>
-                              <meta itemprop="interactionCount" content="UserLikes:221">
-                              <span class="views"><i class="fa fa-eye"></i> 4694</span>
-                              <meta itemprop="interactionCount" content="UserPageVisits:4694">
-                              <span class="comments">
-                                 <a href=""><i class="fa fa-comment"></i> 0</a>
-                                 <meta itemprop="interactionCount" content="UserComments:10">
-                              </span>
+                        </p>
+                        <span class="stats-wrap">
+                           <span class="likes">
+                           <i class="fa fa-thumbs-up"></i> 221</span>
+                           <meta itemprop="interactionCount" content="UserLikes:221">
+                           <span class="views"><i class="fa fa-eye"></i> 4694</span>
+                           <meta itemprop="interactionCount" content="UserPageVisits:4694">
+                           <span class="comments">
+                              <a href=""><i class="fa fa-comment"></i> 0</a>
+                              <meta itemprop="interactionCount" content="UserComments:10">
                            </span>
+                        </span>
                      </figcaption>
                   </figure>
                   <figure class="wide-story">
                      <a href="browse/single-post.html"><img src="img/posts/post-5.jpg"></a>
                      <figcaption class="wide-story-content">
                         <h4 class="story-title">Break news : this is text</h4>
-                           <p class="category-name">Reports</p>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p class="wide-storyParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        <p class="category-name">Reports</p>
+                        <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                        <p class="wide-storyParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim .
-                            </p>
-                           <span class="stats-wrap">
-                              <span class="likes">
-                              <i class="fa fa-thumbs-up"></i> 221</span>
-                              <meta itemprop="interactionCount" content="UserLikes:221">
-                              <span class="views"><i class="fa fa-eye"></i> 4694</span>
-                              <meta itemprop="interactionCount" content="UserPageVisits:4694">
-                              <span class="comments">
-                                 <a href=""><i class="fa fa-comment"></i> 0</a>
-                                 <meta itemprop="interactionCount" content="UserComments:10">
-                              </span>
+                        </p>
+                        <span class="stats-wrap">
+                           <span class="likes">
+                           <i class="fa fa-thumbs-up"></i> 221</span>
+                           <meta itemprop="interactionCount" content="UserLikes:221">
+                           <span class="views"><i class="fa fa-eye"></i> 4694</span>
+                           <meta itemprop="interactionCount" content="UserPageVisits:4694">
+                           <span class="comments">
+                              <a href=""><i class="fa fa-comment"></i> 0</a>
+                              <meta itemprop="interactionCount" content="UserComments:10">
                            </span>
+                        </span>
                      </figcaption>
                   </figure>
                </div>
@@ -155,8 +160,8 @@
                      <hr>
                      <article class="normal-story mix category-2" data-myorder="2">
                         <img src="img/posts/post-1.jpg">
-                        <div class="story-content">                           
-                           <h4 class="story-title">Break news : this is text</h4>
+                        <div class="story-content">
+                           <a href="browse/single-post.html" class="story-title">Real estate fuels top-line growth of 15.6% QoQ, 4.4% YoY on deliveries, construction spending </a>
                            <p class="category-name">Reports</p>
                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
                            <span class="stats-wrap">
@@ -229,13 +234,34 @@
                            </span>
                         </div>
                      </article>
+                  </div>
+                  <div class="chart-card" id="market-tabs">
+                     <h3 class="card-title">Market summery</h3>
+                     <ul id="indices-tabs">
+                        <li><a href="#egx-20">EGX-20</a></li>
+                        <li><a href="#egx-30">EGX-30</a></li>
+                        <li><a href="#egx-70">EGX-70</a></li>
+                        <li><a href="#egx-100">EGX-100</a></li>
+                     </ul>
+                     <div id="egx-20">
+                        <div id="chart-20"></div>
+                     </div>
+                     <div id="egx-30">
+                        <div id="chart-30"></div>
+                     </div>
+                     <div id="egx-70">
+                        <div id="chart-70"></div>
+                     </div>
+                     <div id="egx-100">
+                        <div id="chart-100"></div>
+                     </div>
                   </div>
                   <div id="egypt-stories">
                      <h3 class="headline"><i class="fa fa-newspaper-o"></i>Local News</h3>
                      <hr>
                      <article class="normal-story mix category-2" data-myorder="2">
                         <img src="img/posts/post-1.jpg">
-                        <div class="story-content">                           
+                        <div class="story-content">
                            <h4 class="story-title">Break news : this is text</h4>
                            <p class="category-name">Reports</p>
                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
@@ -348,74 +374,79 @@
                         </div>
                      </article>
                   </div>
+                  <div class="small-stories">
+                     <article >
+                     </article>
+                  </div>
                   <aside class="recent-posts">
-                    <h3 class="headline"><i class="fa fa-clock-o"></i> Recent Posts</h4>
-                    <hr class="single-post-rule">
-                    <figure class="recent-post">
+                     <h3 class="headline">
+                     <i class="fa fa-clock-o"></i> Recent Posts</h4>
+                     <hr class="single-post-rule">
+                     <figure class="recent-post">
                         <img src="img//posts/post-4.jpg">
                         <figcaption class="recent-storyContent">
-                            <h2>Lorem Ipsum dolor</h2>
-                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                            <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
+                           <h2>Lorem Ipsum dolor</h2>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
                         </figcaption>
-                    </figure>
-                    <figure class="recent-post">
+                     </figure>
+                     <figure class="recent-post">
                         <img src="img//posts/post-4.jpg">
                         <figcaption class="recent-storyContent">
-                            <h2>Lorem Ipsum dolor</h2>
-                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                            <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
+                           <h2>Lorem Ipsum dolor</h2>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
                         </figcaption>
-                    </figure>
-                    <figure class="recent-post">
+                     </figure>
+                     <figure class="recent-post">
                         <img src="img//posts/post-4.jpg">
                         <figcaption class="recent-storyContent">
-                            <h2>Lorem Ipsum dolor</h2>
-                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                            <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
+                           <h2>Lorem Ipsum dolor</h2>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
                         </figcaption>
-                    </figure>
-                    <figure class="recent-post">
+                     </figure>
+                     <figure class="recent-post">
                         <img src="img//posts/post-4.jpg">
                         <figcaption class="recent-storyContent">
-                            <h2>Lorem Ipsum dolor</h2>
-                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                            <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
+                           <h2>Lorem Ipsum dolor</h2>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
                         </figcaption>
-                    </figure>
-                    <figure class="trending-post">
+                     </figure>
+                     <figure class="trending-post">
                         <img src="img//posts/post-4.jpg">
                         <figcaption class="recent-storyContent">
-                            <h2>Lorem Ipsum dolor</h2>
-                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                            <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
+                           <h2>Lorem Ipsum dolor</h2>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
                         </figcaption>
-                    </figure>
-                    <figure class="trending-post">
+                     </figure>
+                     <figure class="trending-post">
                         <img src="img//posts/post-4.jpg">
                         <figcaption class="recent-storyContent">
-                            <h2>Lorem Ipsum dolor</h2>
-                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                            <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
+                           <h2>Lorem Ipsum dolor</h2>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
                         </figcaption>
-                    </figure>
-                    <figure class="recent-post">
+                     </figure>
+                     <figure class="recent-post">
                         <img src="img//posts/post-4.jpg">
                         <figcaption class="recent-storyContent">
-                            <h2>Lorem Ipsum dolor</h2>
-                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                            <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
+                           <h2>Lorem Ipsum dolor</h2>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
                         </figcaption>
-                    </figure>
-                    <figure class="recent-post">
+                     </figure>
+                     <figure class="recent-post">
                         <img src="img//posts/post-4.jpg">
                         <figcaption class="recent-storyContent">
-                            <h2>Lorem Ipsum dolor</h2>
-                            <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                            <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
+                           <h2>Lorem Ipsum dolor</h2>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <p>Lorem ipsum dolor sit amet. sit amit <br> dolor sit</p>
                         </figcaption>
-                    </figure>
-                </aside>
+                     </figure>
+                  </aside>
                </section>
                <section id="subscribe-newsletter">
                   <h1>Subscribe to our newsletter</h1>
@@ -426,32 +457,33 @@
                   </form>
                </section>
                <footer id="fixed-footer">
-                <blockquote>
-                        Site Map
-                    </blockquote>
-                <ul class="footer-nav">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about/contact-us.html">Contact us</a></li>
-                    <li><a href="about/about.html">About us</a></li>
-                    <li><a href="about/tos.html">Terms of use</a></li>
-                    <li><a href="users/settings.html">Settings</a></li>
-                </ul>
-                <ul id="social-icons">
-                    <li><a href="https://www.facebook.com/" target="_new"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://github.com/" target="_new"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com" target="_new"><i class="fa fa-linkedin-square"></i></a></li>
-                    <li><a href="mailto:help@naeemresearch.com"><i class="fa fa-envelope"></i> Email us</a></li>
-                </ul>
-                <p id="copyrights">© 2015 Naeem info Platform, all rights reserved</p>
-                <div id="about-us">
-                    <blockquote>
+                  <blockquote>
+                     Site Map
+                  </blockquote>
+                  <ul class="footer-nav">
+                     <li><a href="index.php">Home</a></li>
+                     <li><a href="about/contact-us.html">Contact us</a></li>
+                     <li><a href="about/about.html">About us</a></li>
+                     <li><a href="about/tos.html">Terms of use</a></li>
+                     <li><a href="users/settings.html">Settings</a></li>
+                  </ul>
+                  <ul id="social-icons">
+                     <li><a href="https://www.facebook.com/" target="_new"><i class="fa fa-facebook"></i></a></li>
+                     <li><a href="https://github.com/" target="_new"><i class="fa fa-github"></i></a></li>
+                     <li><a href="https://www.linkedin.com" target="_new"><i class="fa fa-linkedin-square"></i></a></li>
+                     <li><a href="mailto:help@naeemresearch.com"><i class="fa fa-envelope"></i> Email us</a></li>
+                  </ul>
+                  <p id="copyrights">© 2015 Naeem info Platform, all rights reserved</p>
+                  <div id="about-us">
+                     <blockquote>
                         About us
-                    </blockquote>
-                    <p id="about-us-text"> 
+                     </blockquote>
+                     <p id="about-us-text"> 
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <a href="about/about.html"> Read more..</a>
-                    </p>    
-                </div>
-            </footer>
+                     </p>
+                     <a href="#page-top-anchor" id="scroll-up"><i class="fa fa-arrow-up"></i></a>
+                  </div>
+               </footer>
                <script src="js/main.js"></script>
                <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js?v=2.1.2"></script>
                <script type="text/javascript" src="slick/slick.min.js"></script>
