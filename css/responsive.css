@@ -64,6 +64,20 @@
 		width:90%;
 	}
 
+	#egypt-stories {
+		float: none;
+		width:90%;
+	}
+
+	#market-status {
+		float: none;
+		width:90%;
+	}
+
+	.recent-posts {
+		display: none;
+	}
+
 	.normal-story {
 		width: 80%;
 	}

@@ -17,8 +17,8 @@ $("#nav-trigger").click(function(){
 
 // Drop down menu 
 
-$("#newsDropdown-trigger").click(function(){
-  $("#newsDropdown-menu").slideToggle(60, "linear");
+$(".reportsDropdown-trigger").click(function(){
+  $(".reports-menu").slideToggle(60, "linear");
 });
 
 
@@ -46,7 +46,7 @@ $("#egypt-tab").click(function(){
 
 $("#dubai-tab").click(function(){
   $("#egypt-fixed-menu").css("display","none");
-  $("#dubai-fixed-menu").css("display","inline-block");
+  $("#dubai-fixed-menu").css("display","block");
 });
 
 //Share button 

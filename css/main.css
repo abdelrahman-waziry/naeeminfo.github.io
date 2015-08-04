@@ -208,6 +208,35 @@ hr {
   display: block;
 }
 
+.reports-menu {
+  display: none;
+  margin-top: -2px;
+  padding-left: 0;
+  background: #3498db;
+  border: 0;
+  font-size: 16px;
+  font-weight: 300;
+  z-index: 500;
+  cursor: pointer;
+  position: absolute;  
+  border-bottom-right-radius: 2px; 
+  border-bottom-left-radius: 2px;
+}
+
+.reports-menu li {
+  text-align: left;
+  display: block;
+  width: 86px;
+  padding: 1em;
+  color: #fff;
+  font-weight: lighter;
+  margin: auto;
+  font-size: 14px;
+  font-family: 'Source Sans Pro',sans-serif;
+}
+
+.reports-menu li:hover {background: #2980b9;}
+
 #login-button {
   position: relative;
   float: right;
@@ -598,7 +627,7 @@ hr {
 }
 
 .normal-story img {
-  height: auto;
+  height: inherit;
 }
 
 .story-content {
@@ -638,11 +667,15 @@ hr {
   color: #aaa;
 }
 
-.chart-card {
+#market-status {
   width: 37%;
-  margin: .5em;
-  margin-top: 4em;
   float: right;
+}
+
+.chart-card {
+  width: 90%;
+  margin: auto;
+  margin-top: 2em;
   background-color: #fff;
   border-radius: 2px;
   border: 1px solid #d9e0e2;
@@ -652,10 +685,10 @@ hr {
   margin-left: 2em;
 }
 
-#egyptian-currency {
-  width: 37%;
-  margin: .5em;
+#live-currencies {
+  margin: 1.2em;
 }
+
 
 /****************************
 04.Single post
