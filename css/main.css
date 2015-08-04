@@ -884,14 +884,12 @@ hr {
 #recent-headline {
   display: block;
   margin-top: 3em;
-  margin-left: 2.5em;
   margin-bottom: 0;
   padding: .7em;
   width: 91%;
   background-color: #555;
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: lighter;
 }
 
 .recent-post {
@@ -1071,13 +1069,20 @@ Egypt News
 }
 
 #small_articles_grid {
-  width: 90%;
+  width: 33.333337%;
   display: inline-block;
   margin: 2em;
+  margin-top: 0;
 }
 
 .small_article {
   display: inline-block;
-  width: 16.65%;
+  width: 33.33337%;
   margin-right: 1em;
+  margin-bottom: 2.2em;
+}
+
+.small_article_content > .story-title {
+  font-size: 1.1em;
+  margin-bottom: .7em;
 }
