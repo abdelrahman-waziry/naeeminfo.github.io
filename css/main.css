@@ -187,7 +187,7 @@ hr {
 }
 
 #dubai-fixed-menu {
-  display: none;
+  display: inline-block;
   margin: 1.5em auto; 
   float: left;
 }
@@ -437,7 +437,7 @@ hr {
   border-bottom-left-radius: 2px;
 }
 
-#countries-list li {
+#countries-list a {
   text-align: left;
   display: block;
   width: 86px;
@@ -449,7 +449,7 @@ hr {
   font-family: 'Source Sans Pro',sans-serif;
 }
 
-#countries-list li:hover {background: #2980b9;}
+#countries-list a:hover {background: #2980b9;}
 
 
 /****************************
@@ -687,10 +687,6 @@ hr {
 
 #live-currencies {
   margin: 1.2em;
-}
-
-#live-currencies div {
-  display: none;
 }
 
 

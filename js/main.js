@@ -39,16 +39,6 @@ $("#country-trigger").click(function(){
   $("#countries-list").slideToggle(200, "linear");
 });
 
-$("#egypt-tab").click(function(){
-  $("#dubai-fixed-menu").css("display","none");
-  $("#egypt-fixed-menu").css("display","inline-block");
-});
-
-$("#dubai-tab").click(function(){
-  $("#egypt-fixed-menu").css("display","none");
-  $("#dubai-fixed-menu").css("display","block");
-});
-
 //Share button 
 
 $(".toggle-shareBtn").click(function () {
