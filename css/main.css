@@ -689,6 +689,10 @@ hr {
   margin: 1.2em;
 }
 
+#live-currencies a {
+  display: none;
+}
+
 
 /****************************
 04.Single post
