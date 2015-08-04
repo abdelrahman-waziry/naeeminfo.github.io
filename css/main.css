@@ -652,6 +652,11 @@ hr {
   margin-left: 2em;
 }
 
+#egyptian-currency {
+  width: 37%;
+  margin: .5em;
+}
+
 /****************************
 04.Single post
 ****************************/

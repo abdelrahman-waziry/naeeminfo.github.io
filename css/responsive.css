@@ -39,8 +39,33 @@
 		z-index: 550;
 	}
 
+	#country-trigger {
+		float: none;
+		margin-left: 1em;
+	}
+
+	#search-trigger {
+		float: none;
+		margin: auto;
+	}
+
+	#countries-list {
+		margin-right: 6em;
+	}
+
 	#login-button {
+		float: none;
 		margin-right: 1em;
+		margin-left: 1em;
+	}
+	/*News*/
+	#top-stories {
+		float: none;
+		width:90%;
+	}
+
+	.normal-story {
+		width: 80%;
 	}
 }
 
