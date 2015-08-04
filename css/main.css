@@ -689,7 +689,7 @@ hr {
   margin: 1.2em;
 }
 
-#live-currencies a {
+#live-currencies div {
   display: none;
 }
 
