@@ -47,11 +47,11 @@
                   <nav id="fixed-nav">
                      <a href="../../index.html"><img src="../../img/logo.png" alt="logo"></a>
                      <ul id="egypt-fixed-menu">
-                        <li><a href="browse/news/egypt-news.html"><i class="fa fa-file-text-o"></i>News</a></li>
-                        <li><a href="browse/news/egypt-news.html"><i class="fa fa-line-chart"></i>Reports</a></li>
-                        <li><a id="newsDropdown-trigger" href="#"><i class="fa fa-list"></i>News stands</a></li>
-                        <li><a href="browse/categories.html"><i class="fa fa-folder"></i>Symbol Research</a></li>
-                        <li><a href="browse/categories.html"><i class="fa fa-bullhorn"></i>Announcment</a></li>
+                        <li><a id="active" href="egypt-news.html"><i class="fa fa-file-text-o"></i>News</a></li>
+                        <li><a href="egypt-reports.html"><i class="fa fa-line-chart"></i>Reports</a></li>
+                        <li><a href="egypt-newsStand.html"><i class="fa fa-list"></i>News stands</a></li>
+                        <li><a href="egypt-symbolResearch.html"><i class="fa fa-folder"></i>Symbol Research</a></li>
+                        <li><a href="egypt-announcements.html"><i class="fa fa-bullhorn"></i>Announcement</a></li>
                      </ul>
                   </nav>
                   <span id="nav-trigger"><i class="fa fa-bars fa-2x"></i></span> 
@@ -75,7 +75,7 @@
                      <li><a href="../egypt/egypt-news.html">Egypt</a></li>
                      <li><a href="../dubai/dubai-news.html">Dubai</a></li>
                   </ul>
-              </header>
+               </header>
                <div class="page-container">
                <section id="hero-articles">
                   <article class="main_article">
@@ -197,10 +197,17 @@
                   </div>
                </div>
                <footer id="fixed-footer">
-                  <blockquote>
-                     Site Map
-                  </blockquote>
-                  <ul class="footer-nav">
+                <div id="sitemap-wrapper">
+                  <ul class="footer-nav" id="egypt-footer-nav">
+                     <li class="footer-nav-title">Egypt</li>
+                     <li><a href="browse/egypt/egypt-news.html">News</a></li>
+                     <li><a href="browse/egypt/egypt-reports.html">Reports</a></li>
+                     <li><a href="browse/egypt/egypt-newsStand.html">News stands</a></li>
+                     <li><a href="browse/egypt/egypt-symbolResearch.html">Symbol Research</a></li>
+                     <li><a href="browse/egypt/egypt-announcements.html">Announcement</a></li>
+                  </ul>
+                  <ul class="footer-nav" id="dubai-footer-nav">
+                     <li class="footer-nav-title">Dubai</li>
                      <li><a href="index.php">Home</a></li>
                      <li><a href="about/contact-us.html">Contact us</a></li>
                      <li><a href="about/about.html">About us</a></li>
@@ -213,15 +220,22 @@
                      <li><a href="https://www.linkedin.com" target="_new"><i class="fa fa-linkedin-square"></i></a></li>
                      <li><a href="mailto:help@naeemresearch.com"><i class="fa fa-envelope"></i> Email us</a></li>
                   </ul>
-                  <p id="copyrights">© 2015 Naeem info Platform, all rights reserved</p>
+                  </div>
                   <div id="about-us">
                      <blockquote>
                         About us
                      </blockquote>
                      <p id="about-us-text"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <a href="about/about.html"> Read more..</a>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="about/about.html"> Read more</a>
                      </p>
+                     <a href="#page-top-anchor" id="scroll-up"><i class="fa fa-arrow-up"></i></a>
                   </div>
+                   <p id="copyrights">© 2015 Naeem info Platform, all rights reserved</p>
                </footer>
                <script src="../../js/main.js"></script>
                <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js?v=2.1.2"></script>

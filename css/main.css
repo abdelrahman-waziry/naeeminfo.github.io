@@ -19,7 +19,7 @@ Typeface
 
 
 /****************************
-00.General
+0.0 General
 ****************************/
 * {
     outline: none;
@@ -84,7 +84,7 @@ li {
 }
 
 #active {
-    border-bottom: 2px solid #f49600;
+    border-bottom: 5px solid #f49600;
 }
 
 .js div#preloader {
@@ -117,7 +117,7 @@ hr {
   padding-top: 8em;
 }
 
-/*Tooltip*/
+/*0.1 Tooltip*/
 
 .tooltip {
   position: absolute;
@@ -129,6 +129,10 @@ hr {
   line-height: 30px;
   text-align: center;
   border-radius: 2px;
+}
+
+#active {
+  border-bottom: 5px solid #f49600;
 }
 
 .tooltip:after {
@@ -144,7 +148,7 @@ hr {
 }
 
 /****************************
-01.Fixed Header
+1.0 Fixed Header
 ****************************/
 
 #fixed-header {
@@ -197,11 +201,11 @@ hr {
   padding: 0 .5em;
 }
 
-#egypt-fixed-menu li a {color: #848484; cursor: pointer;}
-#egypt-fixed-menu li a:hover {color: #494949;}
+#egypt-fixed-menu li a {color: #848484; cursor: pointer; padding-bottom: 2.42em;}
+#egypt-fixed-menu li a:hover {color: #494949; border-bottom: 5px solid #f49600;}
 
-#dubai-fixed-menu li a {color: #848484; cursor: pointer;}
-#dubai-fixed-menu li a:hover {color: #494949;}
+#dubai-fixed-menu li a {color: #848484; cursor: pointer; padding-bottom: 2.42em;}
+#dubai-fixed-menu li a:hover {color: #494949; border-bottom: 5px solid #f49600;}
 
 #user-profile {
   float: right;
@@ -332,7 +336,7 @@ hr {
   visibility: hidden;
 }
 
-/*Drop down news menu*/
+/*1.1 Drop down news menu*/
 
 #newsDropdown-menu {
   display: none;
@@ -453,7 +457,7 @@ hr {
 
 
 /****************************
-02.Latest news section
+2.0 Latest news section
 ****************************/
 
 .wide-stories {
@@ -490,10 +494,10 @@ hr {
 
 
 /****************************
-03.News grid
+3.0 News grid
 ****************************/
 
-/*Filter and sort controls*/
+/* 3.1 Filter and sort controls*/
 
 .controls {
   padding: 2%;
@@ -594,7 +598,7 @@ hr {
   border-radius: 2px; 
 }
 
-/*Filter and sort controls*/
+/*3.2 stories grid*/
 
 #top-stories .mix{
   display: none;
@@ -689,15 +693,18 @@ hr {
   margin: 1.2em;
 }
 
+aside.recent-posts {
+  width: 37%;
+}
 
 /****************************
-04.Single post
+4.0 Single post
 ****************************/
 
 .single-post {
   display: inline-block;
   margin: 5em 2em 3em 2em;
-  width: 55%;
+  width: 60%;
   border-radius: 3px;
   border: 1px solid #dfdfdf;
   background-color: #fff;
@@ -747,11 +754,13 @@ hr {
   padding: 10px;
 }
 
+/*4.1 Comment Section*/
+
 .comments-section {
   display: inline-block;
   margin: 0 2em 3em 2em;
   padding: 2em;
-  width: 50.3%;
+  width: 55.4%;
   float: left;
   border-radius: 3px;
   border: 1px solid #dfdfdf;
@@ -803,6 +812,8 @@ hr {
 }
 
 
+/*4.2 Sidebars*/
+
 #trending-headline {
   display: block;
   margin-top: 3em;
@@ -830,7 +841,7 @@ hr {
 
 .trending-posts {
   position: relative; 
-  width: 37%;
+  width: 30%;
   margin-top: 0;
   margin-left: -3em;
   margin-right: 5.2em;
@@ -868,11 +879,9 @@ hr {
 }
 
 
-/*Comment Section*/
-
 .recent-posts {
   position: relative; 
-  width: 37%;
+  width: 30%;
   margin: auto;
   margin-top: 0;
   margin-left: -3em;
@@ -923,8 +932,41 @@ hr {
 }
 
 
+
+
+
+
+/***********************
+6.0  News 
+***********************/
+
+.main_article {
+  display: inline-block;
+  margin: 2em;
+  width: 33.333337%;
+}
+
+#small_articles_grid {
+  width: 33.333337%;
+  display: inline-block;
+  margin: 2em;
+  margin-top: 0;
+}
+
+.small_article {
+  display: inline-block;
+  width: 33.33337%;
+  margin-right: 1em;
+  margin-bottom: 2.2em;
+}
+
+.small_article_content > .story-title {
+  font-size: 1.1em;
+  margin-bottom: .7em;
+}
+
 /****************************
-05.Footer
+7.0 Footer
 ****************************/
 
 #subscribe-newsletter {
@@ -971,12 +1013,13 @@ hr {
 }
 
 
+
 #fixed-footer {
   position: relative;
   display: inline-block;
   width: 100%;
   margin: auto;
-  background-color: #2c3e50;
+  background-color: #262626;
   border-top: 2px solid #e7e7e7;
 }
 
@@ -987,15 +1030,33 @@ hr {
   color: #fff;
 }
 
+#sitemap-wrapper {
+  width: 33.333337%;
+  margin: 1em;
+  display: inline-block;
+}
+
+#egypt-footer-nav {
+  display: inline-block;
+  float: left;
+  margin-right: 2em;
+}
+
+.footer-nav-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+  color: #f3f3f3;
+}
 
 .footer-nav li {
-  display: inline-block;
+  display: block;
   padding: .3em;
+  font-weight: lighter;
   font-family: 'Source Sans Pro',Sans-serif;
   font-size: 1.1em;
 }
 
-.footer-nav a {color: #f2f2f2;}
+.footer-nav a {color: #bbb; font-size: 15px;}
 .footer-nav a:hover {color: #ccc;}
 
 .footer-nav h3 {
@@ -1006,25 +1067,31 @@ hr {
   margin-left: auto;
 }
 
-/**About Us**/
-
-#about-us blockquote {
-  margin-left: 0;
-  font-weight: bold;
-  color: #fff;
-}
+/**7.1 About Us**/
 
 #about-us {
   float: right;
-  margin: -11em 5em 3em auto;
-  width: 300px;
+  width: 33.333337%;
   color: #f2f2f2;
+  margin-right: 2em;
   font-family: 'Source Sans Pro', Sans-serif;
   font-weight: lighter;
   font-size: 1.1em;
 }
 
-#about-us a {padding-left: 2px; font-weight: normal; color: #fff; }
+#about-us blockquote {
+  margin-left: 0;
+  font-weight: normal;
+  color: #f3f3f3;
+}
+
+#about-us-text {
+  font-family: 'Source Sans Pro', Sans-serif;
+  color: #bbb;
+  font-size: 17px;
+}
+
+#about-us a {padding-left: 2px; font-weight: lighter; text-decoration: underline; color: #ddd; }
 
 #social-icons {
   display: block;
@@ -1042,12 +1109,12 @@ hr {
 #social-icons a:hover{color: #f2f2f2;}
 
 #copyrights  {
-  margin: auto;
+  margin: 2em auto;
   text-align: center;
   display: block;
   clear: both;
-  font-size: 13px;
-  color: #fff;
+  font-size: 15px;
+  color: #bbb;
   font-family: 'Source Sans Pro', Sans-serif;
   font-weight: lighter;
 }
@@ -1056,33 +1123,5 @@ hr {
   padding: 6px;
   background-color: #f49600;
   border-radius: 4px;
-}
-
-/***********************
-Egypt News 
-***********************/
-
-.main_article {
-  display: inline-block;
-  margin: 2em;
-  width: 33.333337%;
-}
-
-#small_articles_grid {
-  width: 33.333337%;
-  display: inline-block;
-  margin: 2em;
-  margin-top: 0;
-}
-
-.small_article {
-  display: inline-block;
-  width: 33.33337%;
-  margin-right: 1em;
-  margin-bottom: 2.2em;
-}
-
-.small_article_content > .story-title {
-  font-size: 1.1em;
-  margin-bottom: .7em;
+  font-weight: lighter;
 }
