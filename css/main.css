@@ -718,7 +718,7 @@ aside.recent-posts {
 .photo_copyrights {
   display: block;
   text-align: center;
-  margin: 10px auto;
+  margin: 4 auto;
   font-size: 12px;
   color: #bbb;
 }
@@ -960,13 +960,25 @@ aside.recent-posts {
 
 .related-post {
   display: inline-block;
-  margin: auto 1em;
+  margin: 1em;
   width: 28%;
+}
+
+.related-post:hover {
+  background-color: rgba(127, 140, 141,1.0);
 }
 
 #related-topics > hr {
   margin: 1em;
   width: 93%;
+}
+
+.overlay-title {
+  background-color: #222;
+  margin-top: -3em;
+  margin-left: .5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
 }
 
 /***********************
