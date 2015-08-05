@@ -48,7 +48,48 @@ $(".toggle-shareBtn").click(function () {
 //MixitUp 
 
 $(function(){
-  $('#top-stories').mixItUp();
+  $('.news_container').mixItUp();
+  var inputText;
+  var $matching = $();
+
+  // Delay function
+  var delay = (function(){
+    var timer = 0;
+    return function(callback, ms){
+      clearTimeout (timer);
+      timer = setTimeout(callback, ms);
+    };
+  })();
+
+  $("#symbol-search").keyup(function(){
+    // Delay function invoked to make sure user stopped typing
+    delay(function(){
+      inputText = $("#symbol-search").val().toLowerCase();
+      
+      // Check to see if input field is empty
+      if ((inputText.length) > 0) {            
+        $( '.mix').each(function() {
+          $this = $("this");
+          
+           // add item to be filtered out if input text matches items inside the title   
+           if($(this).children('.story-content').text().toLowerCase().match(inputText)) {
+            $matching = $matching.add(this);
+          }
+          else {
+            // removes any previously matched item
+            $matching = $matching.not(this);
+          }
+        });
+        $(".news_container").mixItUp('filter', $matching);
+      }
+
+      else {
+        // resets the filter to show all item if input is empty
+        $(".news_container").mixItUp('filter', 'all');
+      }
+    }, 300 );
+  });
+
 });
 
 $("#categories-trigger").click(function(){

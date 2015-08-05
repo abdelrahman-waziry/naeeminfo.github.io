@@ -43,12 +43,11 @@
                   <nav id="fixed-nav">
                      <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
                      <ul id="egypt-fixed-menu">
-                        <li class="footer-nav-title">Egypt</li>
-                        <li><a href="browse/egypt/egypt-news.html">News</a></li>
-                        <li><a href="browse/egypt/egypt-reports.html">Reports</a></li>
-                        <li><a href="browse/egypt/egypt-newsStand.html">News stands</a></li>
-                        <li><a href="browse/egypt/egypt-symbolResearch.html">Symbol Research</a></li>
-                        <li><a href="browse/egypt/egypt-announcements.html">Announcement</a></li>
+                        <li><a id="active" href="egypt-news.html"><i class="fa fa-file-text-o"></i>News</a></li>
+                        <li><a href="egypt-reports.html"><i class="fa fa-line-chart"></i>Reports</a></li>
+                        <li><a href="egypt-newsStand.html"><i class="fa fa-list"></i>News stands</a></li>
+                        <li><a href="egypt-symbolResearch.html"><i class="fa fa-folder"></i>Symbol Research</a></li>
+                        <li><a href="egypt-announcements.html"><i class="fa fa-bullhorn"></i>Announcement</a></li>
                      </ul>
                   </nav>
                   <span id="nav-trigger"><i class="fa fa-bars fa-2x"></i></span> 
@@ -69,13 +68,14 @@
                   <button id="search-trigger"><i class="fa fa-search"></i></button>
                   <button id="country-trigger"><i class="fa fa-globe"></i>Select Country</button>
                   <ul id="countries-list">
-                     <li><a href="../index.html">Egypt</a></li>
+                     <li><a id="selected-country" href="../index.html">Egypt</a></li>
                      <li><a href="../dubai.html">Dubai</a></li>
                   </ul>
                </header>
                <div class="page-container" id="page-top-anchor">
                   <article class="single-post">
                      <img src="../img/posts/post-1.jpg">
+                     <a href="http://www.bloomberg.com" target="_new" class="photo_copyrights"><i class="fa fa-camera"></i>bloomberg businees</a>
                      <div class="singleStory-content">
                         <h2 class="singleStory-title">Real estate fuels top-line growth of 15.6% QoQ, 4.4% YoY on deliveries, construction spending</h2>
                         <h4 class="post-date"><i class="fa fa-calendar"></i> 03 August 2015 19:20 AM</h4>
@@ -231,76 +231,35 @@
                         </figcaption>
                      </figure>
                   </aside>
-                  <aside class="recent-posts">
-                     <h3 class="headline">
-                     <i class="fa fa-clock-o"></i> Recent Posts</h4>
-                     <hr class="single-post-rule">
-                     <figure class="recent-post">
-                        <img src="../img//posts/post-4.jpg">
-                        <figcaption class="recent-storyContent">
-                           <h2>Lorem Ipsum dolor</h2>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </figcaption>
-                     </figure>
-                     <figure class="recent-post">
-                        <img src="../img//posts/post-4.jpg">
-                        <figcaption class="recent-storyContent">
-                           <h2>Lorem Ipsum dolor</h2>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </figcaption>
-                     </figure>
-                     <figure class="recent-post">
-                        <img src="../img//posts/post-4.jpg">
-                        <figcaption class="recent-storyContent">
-                           <h2>Lorem Ipsum dolor</h2>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </figcaption>
-                     </figure>
-                     <figure class="recent-post">
-                        <img src="../img//posts/post-4.jpg">
-                        <figcaption class="recent-storyContent">
-                           <h2>Lorem Ipsum dolor</h2>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </figcaption>
-                     </figure>
-                     <figure class="trending-post">
-                        <img src="../img//posts/post-4.jpg">
-                        <figcaption class="recent-storyContent">
-                           <h2>Lorem Ipsum dolor</h2>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </figcaption>
-                     </figure>
-                     <figure class="trending-post">
-                        <img src="../img//posts/post-4.jpg">
-                        <figcaption class="recent-storyContent">
-                           <h2>Lorem Ipsum dolor</h2>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </figcaption>
-                     </figure>
-                     <figure class="recent-post">
-                        <img src="../img//posts/post-4.jpg">
-                        <figcaption class="recent-storyContent">
-                           <h2>Lorem Ipsum dolor</h2>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </figcaption>
-                     </figure>
-                     <figure class="recent-post">
-                        <img src="../img//posts/post-4.jpg">
-                        <figcaption class="recent-storyContent">
-                           <h2>Lorem Ipsum dolor</h2>
-                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        </figcaption>
-                     </figure>
-                  </aside>
                </div>
+               <section id="related-topics">
+                  <h3 class="headline"><i class="fa fa-newspaper-o"></i>Related News</h3>
+                  <hr>
+                  <article class="related-post">
+                     <img src="../img/posts/post-1.jpg">
+                     <h2 class="overlay-title">Lorem ipsum</h2>
+                  </article>
+                  <article class="related-post">
+                     <img src="../img/posts/post-1.jpg">
+                     <h2 class="overlay-title">Lorem ipsum</h2>
+                  </article>
+                  <article class="related-post">
+                     <img src="../img/posts/post-1.jpg">
+                     <h2 class="overlay-title">Lorem ipsum</h2>
+                  </article>
+                  <article class="related-post">
+                     <img src="../img/posts/post-1.jpg">
+                     <h2 class="overlay-title">Lorem ipsum</h2>
+                  </article>
+                  <article class="related-post">
+                     <img src="../img/posts/post-1.jpg">
+                     <h2 class="overlay-title">Lorem ipsum</h2>
+                  </article>
+                  <article class="related-post">
+                     <img src="../img/posts/post-1.jpg">
+                     <h2 class="overlay-title">Lorem ipsum</h2>
+                  </article>
+               </section>
                <section id="subscribe-newsletter">
                   <h1>Subscribe to our newsletter</h1>
                   <p>Subscribe to our newsletter to get our latets news, Don't worry we hate spam too.</p>

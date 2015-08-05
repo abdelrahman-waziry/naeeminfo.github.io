@@ -14,7 +14,7 @@
             <head>
                <meta charset="utf-8">
                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-               <title>Naeem info | Egypt</title>
+               <title>Naeem info | Egypt News</title>
                <meta name="keywords" content="">
                <meta name="author" content="Abdelrahman Mohsen">
                <meta name="description" content="">
@@ -72,7 +72,7 @@
                   <button id="search-trigger"><i class="fa fa-search"></i></button>
                   <button id="country-trigger"><i class="fa fa-globe"></i>Select Country</button>
                   <ul id="countries-list">
-                     <li><a href="../egypt/egypt-news.html">Egypt</a></li>
+                     <li><a id="selected-country" href="../egypt/egypt-news.html">Egypt</a></li>
                      <li><a href="../dubai/dubai-news.html">Dubai</a></li>
                   </ul>
                </header>
@@ -190,11 +190,49 @@
                      <label>Sort:</label>
                      <button class="sort" data-sort="myorder:asc">Older</button>
                      <button class="sort" data-sort="myorder:desc">Newer</button>
-                     <form id="symbol-search">
-                        <input type="text" name="symbol" placeholder="Enter symbol">
-                        <input type="submit" value="&#128269">
-                     </form>
+                     <input  id="symbol-search" type="text" name="symbol" placeholder="Enter symbol">
+                     <span>Search by symbol : </span>
                   </div>
+                  <section class="news_container">
+                     <article class="normal-story mix category-2" data-myorder="3">
+                        <img src="../../img/posts/post-3.jpg">
+                        <div class="story-content">
+                           <h4 class="story-title">Break new : this i text</h4>
+                           <p class="category-name">v</p>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <span class="stats-wrap">
+                              <span class="likes">
+                              <i class="fa fa-thumbs-up"></i> 221</span>
+                              <meta itemprop="interactionCount" content="UserLikes:221">
+                              <span class="views"><i class="fa fa-eye"></i> 4694</span>
+                              <meta itemprop="interactionCount" content="UserPageVisits:4694">
+                              <span class="comments">
+                                 <a href=""><i class="fa fa-comment"></i> 0</a>
+                                 <meta itemprop="interactionCount" content="UserComments:10">
+                              </span>
+                           </span>
+                        </div>
+                     </article>
+                     <article class="normal-story mix category-2" data-myorder="2">
+                        <img src="../../img/posts/post-4.jpg">
+                        <div class="story-content">
+                           <h4 class="story-title">Break news : this is text</h4>
+                           <p class="category-name">Reports</p>
+                           <h4 class="post-date"><i class="fa fa-calendar"></i> 26-7-2015</h4>
+                           <span class="stats-wrap">
+                              <span class="likes">
+                              <i class="fa fa-thumbs-up"></i> 221</span>
+                              <meta itemprop="interactionCount" content="UserLikes:221">
+                              <span class="views"><i class="fa fa-eye"></i> 4694</span>
+                              <meta itemprop="interactionCount" content="UserPageVisits:4694">
+                              <span class="comments">
+                                 <a href=""><i class="fa fa-comment"></i> 0</a>
+                                 <meta itemprop="interactionCount" content="UserComments:10">
+                              </span>
+                           </span>
+                        </div>
+                     </article>
+                  </section>
                </div>
                <footer id="fixed-footer">
                 <div id="sitemap-wrapper">
